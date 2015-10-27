@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<!--Heading Stuff-->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Write-Up</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Bootstrap CSS-->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!--Bootstrap Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!--Fonts-->
+		<link href="css/font-awesome.min.css" rel="stylesheet"> 
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<!--Custom CSS-->
+		<link href="css/styles.css" rel="stylesheet">
+		<!--<link href="css/style_DEMO.css" rel="stylesheet">
+	<!--Custom Scripts-->
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+	
+</head>
+<script>
+$(document).ready(function() {
+	
+    $("#lesen").click(function() {
+		district = prompt("Please enter the district you want to view. For example, North 5 would be N5. ", "");
+        $.ajax({
+            url : "textfiles/"+district+"INTRO.txt",
+            dataType: "text",
+            success : function (data) {
+                $(".text1").html(data);
+			
+            }
+
+        });
+		$.ajax({
+            url : "textfiles/"+district+"OTHER.txt",
+            dataType: "text",
+            success : function (data2) {
+                $(".text2").html(data2);
+			
+            }
+
+        });
+		$.ajax({
+            url : "textfiles/"+district+"NOTES.txt",
+            dataType: "text",
+            success : function (data3) {
+                $(".text3").html(data3);
+			
+            }
+
+        });
+		
+    });
+}); 
+</script>
+
+<body>
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+          
+            <!-- sidebar -->
+            <div class="column col-sm-3" id="sidebar">
+              
+                <ul class="nav">
+					<br><br><br><br>
+					<li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active"><a href="#featured">Demographics</a>
+                    </li>
+                    <li><a href="maps.html">Maps</a>
+                    </li>
+					<li><a href="overlays.html">Overlays</a>
+                    </li>
+					<li><a href="#stories">Write-Up</a>
+                    </li>
+					<li><a href="form.html">Form</a>
+                    </li>
+					<li><a href="resources.html">Resources</a>
+                    </li>
+					<li><a href="latest_news.html">Latest News</a>
+                    </li>
+					
+                </ul>
+                <ul class="nav hidden-xs" id="sidebar-footer">
+                    <li>
+                      
+                    </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+          
+            <!-- main -->
+            <div class="column col-sm-9" id="main">
+                <div class="padding">
+                    <div class="full col-sm-9">
+                        <!-- content -->
+                        
+                        <div class="col-sm-12" id="featured">   
+                          <div class="page-header text-muted">
+                          <h1>Write-Up</h1>
+                          </div> 
+						  <button type="button" class="btn btn-danger btn-lg pull-centre" style="float: right;" id="lesen">Change District</button>
+								<h5 style="float: left; color: " id="demo"></h5> <br><br>
+                        </div>
+
+                        
+<!--/top story-->
+                        
+ 
+                        
+<div class="bs-example">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#West" style="font-size:20px; color:#545454">Introduction</a></li>
+        <li><a data-toggle="tab" href="#City" style="font-size:20px; color:#545454">Neighborhood & Built Environment</a></li>
+		<li><a data-toggle="tab" href="#Inspector" style="font-size:20px; color:#545454" >Inspector Notes</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <div id="West" class="tab-pane fade in active">
+			<div class="text1">
+			<br><br>
+				Click on Change District to get started. 
+			</div>
+        </div>
+        <div id="City" class="tab-pane fade">
+			<div class="text2">
+			<br><br>
+					Click on Change District to get started. 
+			</div>
+        </div>
+		<div id="Inspector" class="tab-pane fade">
+			<div class="text3">
+			<br><br>
+					Click on Change District to get started.
+			</div>
+        </div>
+		
+    </div>
+</div>              
+                     
+           </div><!-- /col-9 -->
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->
+          
+        </div>
+    </div>
+</div>
+	<!-- script references -->
+	
+	</body>
+</html>

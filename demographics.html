@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--This page has a few custom scripts that run the demographic tables. The data is stored in mdc.csv, and the d3js script (last script in custom scripts) helps the Charts.js display the data. AutoGenerateCharts.js is a custom js file that initiates this process.-->
+<head>
+	
+	<!--Heading Stuff-->
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Demographics</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Bootstrap CSS-->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!--Bootstrap Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!--Fonts-->
+		<link href="css/font-awesome.min.css" rel="stylesheet"> 
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<!--Custom CSS-->
+		<link href="css/styles.css" rel="stylesheet">
+		<!--<link href="css/style_DEMO.css" rel="stylesheet">
+	<!--Custom Scripts-->
+		<script src="js/chart.js"></script>
+		<script src="js/AutoGenerateCharts.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+</head>
+
+
+
+	<body>
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+            <!-- sidebar -->
+            <div class="column col-sm-3" id="sidebar">
+              
+                <ul class="nav">
+					<br><br><br><br>
+					<li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active"><a href="#featured">Demographics</a>
+                    </li>
+                    <li><a href="maps.html">Maps</a>
+                    </li>
+					<li><a href="http://www.austintexas.gov/GIS/DevelopmentWebMap/Viewer.aspx">Overlays</a>
+                    </li>
+					<li><a href="write_up.html">Write-Up</a>
+                    </li>
+					<li><a href="form.html">Form</a>
+                    </li>
+					<li><a href="resources.html">Resources</a>
+                    </li>
+					<li><a href="latest_news.html">Latest News</a>
+                    </li>
+					
+                </ul>
+                <ul class="nav hidden-xs" id="sidebar-footer">
+                    <li>
+                      
+                    </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+          
+            <!-- main -->
+			
+			
+			
+            <div class="column col-sm-9" id="main">
+                <div class="padding">
+                    <div class="full col-sm-9">
+                      
+                        <!-- content -->
+                        
+                        <div class="col-sm-12" id="featured">
+							<div class="page-header text-muted">
+								<h1>Demographics</h1>	
+							</div>
+								<button type="button" class="btn btn-danger btn-lg pull-centre" style="float: right;" onclick="myFunction()">Change District</button>
+								<h5 style="float: left; color: " id="demo"></h5> <br><br>
+                        </div>
+						<br><br>
+						<!--Charts-->
+						<div class="row"> 
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h4 align="center"> Housing Tenure </h4>
+								<div id="canvas-holder" align="center">
+									<canvas id="canvas3" width="400" height="400"/>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h4 align="center"> Income Brackets </h4>
+								<div id="canvas-holder" align="center">
+									<canvas id="canvas" width="400" height="400"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">	
+								<h4 align="center"> Race & Ethnicity </h4>
+								<div id="canvas-holder" align="center">
+									<canvas id="canvas2" width="400" height="400"/>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<h4 align="center"> Complaints by Month </h4>
+								<div id="canvas-holder" align="center">
+									<canvas id="canvas4" width="400" height="400"/>
+								</div>
+							</div>	
+						</div>
+						<div class="row">
+							<h4 align="center" style="color:#E6253B" id="populationDist"></h4>
+						</div>
+						<!--Demographic Indicators-->
+						<div class="container-fluid">
+							<div class="row">
+										<div class="col-md-3 col-sm-6 col-xs-12">
+											<div align="center" class="feature">
+												<i class="fa fa-graduation-cap"></i>
+												<div class="feature-content">
+													<h4 align="center">Student Popluation</h4>
+													<p id="studentPopulation" align="center"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6 col-xs-12">
+											<div align="center" class="feature">
+												<i class="fa fa-rocket"></i>
+												<div class="feature-content">
+													<h4 align="center">Public Transport</h4>
+													<p id="publicTransit" align="center"></p>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-6 col-xs-12">
+											<div align="center" class="feature">
+												<i class="fa fa-home"></i>
+												<div class="feature-content">
+													<h4 align="center">Home Age</h4>
+													<p id="homeAge" align="center"></p>
+												</div>
+											</div>
+										</div>	
+										<div class="col-md-3 col-sm-6 col-xs-12">
+											<div align="center" class="feature">
+												<i class="fa fa-signal"></i>
+												<div class="feature-content">
+													<h4 align="center">Rental Rates</h4>
+													<p id="rentalRates" align="center"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+						</div>
+
+ 
+                    </div><!-- /col-9 -->
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->
+			
+        </div>
+		
+		
+    </div>
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
