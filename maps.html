@@ -173,7 +173,7 @@ var district = "N1";
 
 function myFunction() {
     district = prompt("Please enter the district you want to view. For example, North 5 would be N5. ", "");
-	district = district.toUpperCase();
+	district = district.toLowerCase();
     
     if (district != null) {
         document.getElementById("demo").innerHTML =
