@@ -35,11 +35,13 @@
             <!-- sidebar -->
             <div class="column col-sm-3" id="sidebar">
               
-                <ul class="nav">
+                <ul class="media-list">
 					<br><br><br><br>
 					<li><a href="index.html">Home</a>
                     </li>
-                    <li><a href="demographics.html">Demographics</a>
+					<li><a href="resources.html">Resources</a>
+                    </li>
+                    <li class="active"><a href="#featured">Demographics</a>
                     </li>
                     <li><a href="maps.html">Maps</a>
                     </li>
@@ -48,8 +50,6 @@
 					<li><a href="write_up.html">Write-Up</a>
                     </li>
 					<li><a href="form.html">Form</a>
-                    </li>
-					<li><a href="#featured">Resources</a>
                     </li>
 					<li><a href="latest_news.html">Latest News</a>
                     </li>
@@ -81,17 +81,19 @@
  
                         
 <div class="bs-example">
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#West" style="font-size:18px; color:#545454">Codes and Ordinances</a></li>
-        <li><a data-toggle="tab" href="#City" style="font-size:18px; color:#545454">Property & Neighborhood Research</a></li>
-		<li><a data-toggle="tab" href="#Inspector" style="font-size:18px; color:#545454" >Ownership & Legal</a></li>
-		<li><a data-toggle="tab" href="#Idhar" style="font-size:18px; color:#545454" >Utility Information</a></li>
-		<li><a data-toggle="tab" href="#Udhar" style="font-size:18px; color:#545454" >Glossary</a></li>
-
+    <ul>
+		<div class="well well-lg">
+			<li><a href="#codes" style="font-size:18px; color:#545454">Codes and Ordinances</a></li>
+			<li><a href="#property" style="font-size:18px; color:#545454">Property Research</a></li>
+			<li><a href="#neighborhood" style="font-size:18px; color:#545454">Neighborhood Research</a></li>
+			<li><a href="#legal" style="font-size:18px; color:#545454" >Ownership & Legal</a></li>
+			<li><a href="#utility" style="font-size:18px; color:#545454" >Utility Information</a></li>
+			<li><a href="#glossary" style="font-size:18px; color:#545454" >Terminology and Definitions</a></li>
+		</div>
     </ul>
 	
     <div class="tab-content">
-        <div id="West" class="tab-pane fade in active">
+        <div id="codes">
 			<ul class="media-list">
 			  <li class="media">
 				<a class="pull-left" href="#">
@@ -101,7 +103,7 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">City of Austin </h4>
 					<ul style="list-style-type: none">
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://www.municode.com/library/#!/tx/austin/codes/code_of_ordinances" id="reply"> City of Austin Code</a> Volumes I through IV of the Austin, TX Codes of Ordinances </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://www.municode.com/library/tx/austin/codes/code_of_ordinances?nodeId=15302" id="reply"> City of Austin Code</a> Volumes I through IV of the Austin, TX Codes of Ordinances </li><br>
 					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/page/codes-and-technical-information#code-interp" id="reply"> City of Austin Technical Code</a> Approved local amendments to various disciplines in the Building technical Codes </li><br>
 					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/department/boards-and-commissions" id="reply"> City of Austin Boards and Commissions</a> View agendas, by-laws, and other information about City Boards and Commissions </li><br>
 					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.cityofaustin.org/edims/search.cfm" id="reply"> City of Austin Clerk</a> Search City public records </li><br>
@@ -120,10 +122,10 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">State of Texas</h4>
 					<ul style="list-style-type: none">
-						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.statutes.legis.state.tx.us/?link=TN" id="reply"> Texas Constitution and Statutes</a> Volumes I through IV of the Austin, TX Codes of Ordinances </li><br>
-						<li><a class="btn btn-info btn-circle text-uppercase" href="http://law.onecle.com/texas/health/index.html" id="reply"> Texas Health and Safety Code</a> Approved local amendments to various disciplines in the Building technical Codes </li><br>
-						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.statutes.legis.state.tx.us/SOTWDocs/LG/htm/LG.54.htm" id="reply"> Texas Local Government Code (Chapter 54)</a> View agendas, approved meeting minutes, membership by-laws, and other information about City Boards and Commissions </li><br>
-						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.tdlr.texas.gov/ab/abtas.htm" id="reply"> Texas Accessibility Standards</a> Search City public records </li><br>
+						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.statutes.legis.state.tx.us/" id="reply"> Texas Constitution and Statutes</a>Search State of Texas laws</li><br>
+						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.statutes.legis.state.tx.us/?link=HS" id="reply"> Texas Health and Safety Code</a>Search State of Texas health and safety codes</li><br>
+						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.statutes.legis.state.tx.us/SOTWDocs/LG/htm/LG.54.htm" id="reply"> Texas Local Government Code (Chapter 54)</a>Research Texas' enforcement of municipal ordinances</li><br>
+						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.tdlr.texas.gov/ab/abtas.htm" id="reply"> Texas Accessibility Standards</a>Scoping and technical requirements for accessibility to sites, facilities, buildings, and elements by individuals with disabilities</li><br>
 					 </ul> 
 				  </div>              
 				</div>
@@ -138,8 +140,8 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">Regional & Federal </h4>
 					<ul style="list-style-type: none">
-						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.capcog.org/" id="reply"> Capital Area Council of Governments</a> Volumes I through IV of the Austin, TX Codes of Ordinances </li><br>
-						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.epa.gov/mold/i-e-r.html#Mold%20Remediation%20-%20Key%20Steps" id="reply"> EPA Mold Remidiation</a> Approved local amendments to various disciplines in the Building technical Codes </li><br>
+						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.capcog.org/" id="reply"> Capital Area Council of Governments</a>A voluntary association including over 90 member governments, cities and counties as well as school districts, chambers of commerce, nonprofit agencies</li><br>
+						<li><a class="btn btn-info btn-circle text-uppercase" href="http://www.epa.gov/mold/i-e-r.html#Mold%20Remediation%20-%20Key%20Steps" id="reply"> EPA Mold Remediation</a>Information about Investigating, Evaluating, and Remediating Moisture and Mold Problems</li><br>
 					</ul> 
 				  </div>              
 				</div>
@@ -147,7 +149,7 @@
 			</ul>	
 		</div>
 
-        <div id="City" class="tab-pane fade">
+        <div id="property" >
 			<ul class="media-list">
 			  <li class="media">
 				<a class="pull-left" href="#">
@@ -157,7 +159,7 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">Property Research </h4>
 					<ul style="list-style-type: none">
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> ARR Online Profile</a> Volumes I through IV of the Austin, TX Codes of Ordinances 
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://coaagssomprd.coacd.org/ArrProfile/" id="reply"> ARR Online Profile</a> Volumes I through IV of the Austin, TX Codes of Ordinances 
 					 <ol>
 						<li>Whether the property falls within Full Purpose or the ETJ</li>
 						<li>The “Accounts” tab shows the name and address of the person that holds the utility account for the property</li>
@@ -167,7 +169,7 @@
 					</ol>
 					    
 					  </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Development Web Map</a> Viewer containing layers related to development, drainage, and floodplain.
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/GIS/developmentwebmap/Viewer.aspx" id="reply"> Development Web Map</a> Viewer containing layers related to development, drainage, and floodplain.
 						<ol>
 						<li>Viewer containing layers related to development, drainage, and floodplain.</li>
 						<li>Building footprints (1987, 1997, 2003)</li>
@@ -182,18 +184,20 @@
 						</ol>
 					  
 					  </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> FloodPro</a> Determine if a property is in the floodplain </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Historic Aerial Maps</a> Aerial photography from 1962 to 2009 </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/floodpro/#/FloodProIntro" id="reply"> FloodPro</a> Determine if a property is in the floodplain </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="ftp://ftp.ci.austin.tx.us/GIS-Data/Regional/coa_gis.html" id="reply"> Historic Aerial Maps</a> Aerial photography from 1962 to 2009 </li><br>
 					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://austin.maps.arcgis.com/apps/webappviewer/index.html?id=5256ed2e9e9a4b6195be337f10b8cf18" id="reply"> Jurisdiction Web Maps</a> Look up Jurisdiction of a property </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> License and Permit Search</a> Research tool available to the public to research permits and licenses </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> MOWS Mowable Objects</a> Determine if a City agency is responsible for mowing a property </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Zoning Profile Map</a> The Zoning Profile Report validates the Zoning, Zoning Cases, Zoning Ordinances, Zoning Overlays, Future Land Use & Regulating Plan information that is associated with a property.</li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Repeat Offender Web Map</a> Properties registered with the Repeat Offender Program(ROP). </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://www.austintexas.gov/devreview/a_queryfolder_permits.jsp" id="reply"> License and Permit Search</a> Research tool available to the public to research permits and licenses </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://coaagssomprd.coacd.org/mows/" id="reply"> MOWS Mowable Objects</a> Determine if a City agency is responsible for mowing a property </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/GIS/ZoningProfile/" id="reply"> Zoning Profile Map</a> The Zoning Profile Report validates the Zoning, Zoning Cases, Zoning Ordinances, Zoning Overlays, Future Land Use & Regulating Plan information that is associated with a property.</li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://austin.maps.arcgis.com/apps/SummaryViewer/index.html?appid=20874ab537454f988f6675f0a70b17f1" id="reply"> Repeat Offender Web Map</a> Properties registered with the Repeat Offender Program(ROP). </li><br>
 					 </ul> 
 				  </div>              
 				</div>
 			  </li>
 			</ul>
+		</div>
+		<div id="neighborhood" >
 			<ul class="media-list">
 			  <li class="media">
 				<a class="pull-left" href="#">
@@ -203,22 +207,21 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">Neighborhood Research</h4>
 					<ul style="list-style-type: none">
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Council District Map</a> Identify which City Council district a property is located </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Crime Viewer</a> View crime reports in an area </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Impervious Surface, Parking Placement, Garage Placement</a> Shows the Impervious Cover/Parking Placement, Garage Placement, and Front Porch design tools that are available subdistrict or area-wide. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Neighborhood Groups</a> Find the community groups and police district in an area </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Neighborhood Plan</a> Locate the Neighborhood plan and contact team </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Neighborhood Conservation Combining District (NCCD)</a> Establishes development regulations for unique neighborhoods in order to preserve their traditional character while allowing for controlled growth to occur. Sets standards for redevelopment that is compatible with the unique character of the neighborhood. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Sanborn Maps</a> Historical Sanborn Fire Insurance Maps (NOT for legal use) </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Watershed</a> Find out which watershed a property is located in </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/GIS/CouncilDistrictMap/" id="reply"> Council District Map</a> Identify which City Council district a property is located </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/GIS/crimeviewer/CrimeReportSearch.html?" id="reply"> Crime Viewer</a> View crime reports in an area </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://austintexas.gov/department/residential-design-compatibility-standards" id="reply"> Impervious Surface, Parking Placement, Garage Placement</a> Shows the Impervious Cover/Parking Placement, Garage Placement, and Front Porch design tools that are available subdistrict or area-wide. </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://assets.austintexas.gov/myneighborhood/index.html" id="reply"> Neighborhood Groups</a> Find the community groups and police district in an area </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://austintexas.gov/page/adopted-neighborhood-planning-areas-0" id="reply"> Neighborhood Plan</a> Locate the Neighborhood plan and contact team </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://austintexas.gov/sites/default/files/files/Planning/nccd_ordinance_chart.pdf" id="reply"> Neighborhood Conservation Combining District (NCCD)</a> Establishes development regulations for unique neighborhoods in order to preserve their traditional character while allowing for controlled growth to occur. Sets standards for redevelopment that is compatible with the unique character of the neighborhood. </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.lib.utexas.edu/maps/sanborn/texas.html" id="reply"> Sanborn Maps</a> Historical Sanborn Fire Insurance Maps (NOT for legal use) </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.austintexas.gov/GIS/FindYourWatershed/" id="reply"> Watershed</a> Find out which watershed a property is located in </li><br>
 					 </ul> 
 				  </div>              
 				</div>
 			  </li>
 			</ul>
-
         </div>
-		<div id="Inspector" class="tab-pane fade">
+		<div id="legal" >
 			<ul class="media-list">
 			  <li class="media">
 				<a class="pull-left" href="#">
@@ -228,21 +231,21 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">Ownership & Legal </h4>
 					<ul style="list-style-type: none">
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Travis County Appraisal</a> Identify owner, legal description, Property Roll (Found in AMANDA), taxed improvements</li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Williamson County Appraisal</a> Identify owner, legal description, Property Roll (Found in AMANDA), taxed improvements</li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Hays County Appraisal</a> Identify owner, legal description, Property Roll (Found in AMANDA), taxed improvements </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Travis County Clerk</a> Research Deeds, Death Certificates, Marriage Certificates </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Williamson County Clerk</a> Research Deeds, Death Certificates, Marriage Certificates </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Hays County Clerk</a> Research Deeds, Death Certificates, Marriage Certificates </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Bank-owned foreclosed properties</a> Contact information when dealing with foreclosed/bank owned properties </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.traviscad.org/property_search.html" id="reply"> Travis County Appraisal</a> Identify owner, legal description, Property Roll (Found in AMANDA), taxed improvements</li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.wcad.org/property-search-3/" id="reply"> Williamson County Appraisal</a> Identify owner, legal description, Property Roll (Found in AMANDA), taxed improvements</li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://propertysearch.hayscad.com/Appraisal/PublicAccess/PropertySearch.aspx?PropertySearchType=1&SelectedItem=10&PropertyID=&PropertyOwnerID=&NodeID=11" id="reply"> Hays County Appraisal</a> Identify owner, legal description, Property Roll (Found in AMANDA), taxed improvements </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://deed.co.travis.tx.us/ords/f?p=105:5:0::NO:::#results" id="reply"> Travis County Clerk</a> Research Deeds, Death Certificates, Marriage Certificates </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://deed.wilco.org/" id="reply"> Williamson County Clerk</a> Research Deeds, Death Certificates, Marriage Certificates </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.co.hays.tx.us/records-search.aspx" id="reply"> Hays County Clerk</a> Research Deeds, Death Certificates, Marriage Certificates </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://www.mba.org/audience/residential-mortgage-professionals/property-preservation-resource-center/property-preservation-servicer-contacts" id="reply"> Bank-owned foreclosed properties</a> Contact information when dealing with foreclosed/bank owned properties </li><br>
 					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Austin Municipal Court - JEMS</a> JEMS-To log on: click link (to the right of this text), click connect, click connect again, click OK, enter your desktop computer user name and password, click OK, enter User Id: LOOK, Passwork: look, click OK.</li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Austin Municipal Court - Online</a> Online- Employee ID, Password(COA E-Access password), Officer ID(5 digit assigned by Municipal Court), Last Name </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> LexisNexus (See ADM for account)</a> Ownership research by search public records obtained from Federal, state, and local sources, including civil and criminal courts, bankruptcy courts, public assessor's offices, state property and tax offices, secretary of state offices. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Probate Research</a> Travis County Clerk search for probate documents from February 2003 to present </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Sales of Foreclosed Properties</a> Research property sales information on properties that are foreclosed and sold by the tax assessor in Travis County </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Secretary of State</a> Search for business entities (LLCs) and registered agents. User ID = 209208344 Password = Enforce 123 </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Taxable Entity Search</a> Search for company tax information </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Texas Department of Motor Vehicles</a> Search DMV records for ownership. Call 512-465-1468 or email vrt-tsb@txdmb.gov and use account #WA30925 to get password. </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://www.austintexas.gov/AmcOfficerInquiry/ofclogin.aspx?ReturnUrl=%2fAmcOfficerInquiry%2f" id="reply"> Austin Municipal Court - Online</a> Online- Employee ID, Password(COA E-Access password), Officer ID(5 digit assigned by Municipal Court), Last Name </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.accurint.com/" id="reply"> LexisNexus (See ADM for account)</a> Ownership research by search public records obtained from Federal, state, and local sources, including civil and criminal courts, bankruptcy courts, public assessor's offices, state property and tax offices, secretary of state offices. </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.traviscountyclerk.org/eclerk/Content.do?code=P.0" id="reply"> Probate Research</a> Travis County Clerk search for probate documents from February 2003 to present </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://tax-office.traviscountytx.gov/foreclosure" id="reply"> Sales of Foreclosed Properties</a> Research property sales information on properties that are foreclosed and sold by the tax assessor in Travis County </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://www.sos.state.tx.us/corp/sosda/" id="reply"> Secretary of State</a> Search for business entities (LLCs) and registered agents. User ID = 209208344 Password = Enforce 123 </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://mycpa.cpa.state.tx.us/coa/Index.html" id="reply"> Taxable Entity Search</a> Search for company tax information </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://mvinet.txdmv.gov" id="reply"> Texas Department of Motor Vehicles</a> Search DMV records for ownership. Call 512-465-1468 or email vrt-tsb@txdmb.gov and use account #WA30925 to get password. </li><br>
 					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Title Search</a> Email Lisa DeRoche to purchase a title search. </li><br>
 					 </ul> 
 				  </div>              
@@ -250,7 +253,7 @@
 			  </li>
 			</ul> 
         </div>
-		<div id="Idhar" class="tab-pane fade">
+		<div id="utility">
 			<ul class="media-list">
 			  <li class="media">
 				<a class="pull-left" href="#">
@@ -260,17 +263,17 @@
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">Utility Information </h4>
 					<ul style="list-style-type: none">
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> AWU GIS </a> Volumes I through IV of the Austin, TX Codes of Ordinances </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Power Outages </a> Approved local amendments to various disciplines in the Building technical Codes </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> IMMPACT </a> View agendas, by-laws, and other information about City Boards and Commissions </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> CC&B - Austin Energy</a> Search City public records </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> AWU GIS </a> Search Austin Water service requests, work orders, perform routing functions, location of water infrastructure </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="https://my.austinenergy.com/outages/" id="reply"> Power Outages </a> Customer power outages - location and severity across city </li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="http://coaagssomprd.coacd.org/Immpact/Account/LogOn?returnUrl=%2FImmpact%2FHome" id="reply"> IMMPACT </a> Infrastructure Management, Mapping, Planning And Coordination Tool. This tool displays CIP projects, Right-of-Way and Excavation Permits, Temporary Use Permits, Special Events, and the current Street & Bridge Annual Service Plan</li><br>
+					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> CC&B - Austin Energy</a>Austin Energy customer billing information</li><br>
 					 </ul> 
 				  </div>              
 				</div>
 			  </li>
 			</ul>
         </div>
-		<div id="Udhar" class="tab-pane fade">
+		<div id="glossary">
 			<ul class="media-list">
 			  <li class="media">
 				<a class="pull-left" href="#">
@@ -279,15 +282,22 @@
 				<div class="media-body">
 				  <div class="well well-lg">
 					  <h4 class="media-heading text-uppercase reviews">Terminology and Definitions </h4>
-					<ul style="list-style-type: none">
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Neighborhood Plans</a> - Neighborhood planning provides an opportunity for citizens to take a proactive role in the planning process and decide how their neighborhoods will move into the future while addressing land use, zoning, transportation and urban design issues. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Subchapter E</a> The standards are intended to raise the level of quality for all non-residential and mixed-use development, but within a regulatory structure offering options and flexibility, not strict requirements. New development is subject to a set of minimum site and building design standards, recognizing that all new development, regardless of size, should be subject to minimum standards. The regulations foster a built environment of aesthetic and sustainable value, enhance economic development efforts, promote Austin’s unique character and natural environment, and ensure an efficient development review process. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Subchapter F</a> The Residential Design and Compatibility or "McMansion" regulations, were designed to minimize the impact of new construction, remodels, and additions to existing buildings on surrounding properties in residential neighborhoods by defining an acceptable building area for each lot within which new development may occur.  The standards were adopted to protect the character of Austin's older neighborhoods by ensuring that new construction, remodels, and additions are compatible in scale and bulk with existing neighborhoods.  </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Transit Oriented Development (TOD) Regulating Plan</a> TOD is a functional integration of land use and transit planning. It is compact, wakable, mixed-use development connected to high quality public transportation. Typical features include improved pedestrian and street connectivity, public amenities such as pocket parks and plazas, civic art, landscaping, and a concentration of residences and jobs in proximity to transit stations and commerical businesses.  </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Imagine Austin Activity Corridor</a> An area identified on the Growth Concept Map where an increased density of people, jobs and services will be located along the length of the corridor. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Neighborhood Conservation Combining District</a> A small area plan that establishes development regulations for unique neighborhoods in order to preserve their traditional character while allowing for controlled growth to occur. It sets standards for redevelopment that is compatible with the unique character of the neighorhood. </li><br>
-					  <li><a class="btn btn-info btn-circle text-uppercase" href="#" id="reply"> Watershed</a> A watershed is the area of land that drains to a particular location. In Austin, watersheds typically refer to the land draining to one of our larger creeks. </li><br>
-					 </ul> 
+					<dl style="list-style-type: none">
+					  <dt> Neighborhood Plans</dt>
+					  <dd>Neighborhood planning provides an opportunity for citizens to take a proactive role in the planning process and decide how their neighborhoods will move into the future while addressing land use, zoning, transportation and urban design issues.</dd>
+					  <dt> Subchapter E</dt> 
+					  <dd>The standards are intended to raise the level of quality for all non-residential and mixed-use development, but within a regulatory structure offering options and flexibility, not strict requirements. New development is subject to a set of minimum site and building design standards, recognizing that all new development, regardless of size, should be subject to minimum standards. The regulations foster a built environment of aesthetic and sustainable value, enhance economic development efforts, promote Austin’s unique character and natural environment, and ensure an efficient development review process. </dd>
+					  <dt> Subchapter F</dt> 
+					  <dd>The Residential Design and Compatibility or "McMansion" regulations, were designed to minimize the impact of new construction, remodels, and additions to existing buildings on surrounding properties in residential neighborhoods by defining an acceptable building area for each lot within which new development may occur.  The standards were adopted to protect the character of Austin's older neighborhoods by ensuring that new construction, remodels, and additions are compatible in scale and bulk with existing neighborhoods.</dd>
+					  <dt> Transit Oriented Development (TOD) Regulating Plan</dt>
+					  <dd>TOD is a functional integration of land use and transit planning. It is compact, wakable, mixed-use development connected to high quality public transportation. Typical features include improved pedestrian and street connectivity, public amenities such as pocket parks and plazas, civic art, landscaping, and a concentration of residences and jobs in proximity to transit stations and commerical businesses.  </dd>
+					  <dt> Imagine Austin Activity Corridor</dt> 
+					  <dd>An area identified on the Growth Concept Map where an increased density of people, jobs and services will be located along the length of the corridor. </dd>
+					  <dt> Neighborhood Conservation Combining District</dt> 
+					  <dd>A small area plan that establishes development regulations for unique neighborhoods in order to preserve their traditional character while allowing for controlled growth to occur. It sets standards for redevelopment that is compatible with the unique character of the neighorhood. </dd>
+					  <dt> Watershed</dt> 
+					  <dd>A watershed is the area of land that drains to a particular location. In Austin, watersheds typically refer to the land draining to one of our larger creeks. </dd>
+					 </dl> 
 				  </div>              
 				</div>
 			  </li>
