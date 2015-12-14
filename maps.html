@@ -41,7 +41,7 @@
                     </li>
 					<li><a href="resources.html">Resources</a>
                     </li>
-                    <li class="active"><a href="#featured">Demographics</a>
+                    <li><a href="demographics.html">Demographics</a>
                     </li>
                     <li><a href="maps.html">Maps</a>
                     </li>
@@ -173,7 +173,7 @@ var district = "N1";
 
 function myFunction() {
     district = prompt("Please enter the district you want to view. For example, North 5 would be N5. ", "");
-	district = district.toUpperCase();
+	district = district.toLowerCase();
     
     if (district != null) {
         document.getElementById("demo").innerHTML =
