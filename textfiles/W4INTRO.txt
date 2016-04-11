@@ -1,1 +1,22 @@
-Hello World!
+<p>District W4 is composed of three neighborhoods: Allandale, North Shoal Creek, and North Burnet.</p> 
+
+<h2>Allandale</h2>
+
+<p>This neighborhood runs between Mopac and Burnet Road from Hancock Drive to Anderson Ln. The majority of the neighborhood consists of single-family homes, while the most multi-family housing and commercial is located near the corridors of Burnet Road and Anderson Lane.</p>
+
+<h2>North Shoal Creek</h2>
+
+<p>The neighborhood has an area of 1.179 square miles (3.1 km2) and a population of 4,302. As of 2010, there were just over 2,247 housing units in North Shoal Creek, 796 are detached single-family homes. The neighborhood is mainly made up of ranch homes built in the early 1960s to the early to mid-1970s.</p>
+
+<h2>North Burnet</h2>
+
+<p>The North Burnet area is primarily light industrial and office, with a cluster of multifamily apartment complexes around Gracy Farms Blvd. The University of Texas Pickle Research Campus and Austin Community College campus are publicly-owned properties in the area. The neighborhood also contains commercial, regional big-box retail, higher education, and research facilities. North Burnet is unique in that there are no existing single-family homes.</p>
+
+<h2>District W4 Today</h2>
+
+<p>Like many neighborhood associations, neighborhoods in this district encourage growth along arterials and fight against infill development. The city has directed growth efforts towards the Gateway and around the Domain development focusing on Complete Streets, and dense vertical mixed use development to ease demand pressures on established neighborhoods.</p>
+
+<p>Currently, the City is would like to implement a corridor plan that makes Burnet Road north of 183 a “destination street” that emphasizes a mix of live/work/play on Burnet Road, rather than merely directing traffic through the thoroughfare. Eclectic and exciting shops and restaurants with a few new mixed-use developments would help make the street a destination.</p>
+
+<p>In terms of complaint density, the directly areas just north and south of Parmer garnered the most Property Abatement cases, and the density of cases diminish moving south, in what is one of the largest contiguously urban districts in the city.</p>
+
