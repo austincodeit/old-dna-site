@@ -23,8 +23,8 @@
 		<!--<link href="css/style_DEMO.css" rel="stylesheet">
 	<!--Custom Scripts-->
 		<script src="js/chart.js"></script>
-		<script src="js/AutoGenerateCharts.js"></script>
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="js/AutoGenerateCharts.js"></script>
 
 </head>
 
@@ -49,7 +49,7 @@
                     </li>
 					<li><a href="http://www.austintexas.gov/GIS/DevelopmentWebMap/Viewer.aspx">Overlays</a>
                     </li>
-					<li><a href="write_up.html">Write-Up</a>
+					<li><a href="write_up.html">Profiles</a>
                     </li>
 					<li><a href="form.html">Form</a>
                     </li>
@@ -66,9 +66,6 @@
             <!-- /sidebar -->
           
             <!-- main -->
-			
-			
-			
             <div class="column col-sm-9" id="main">
                 <div class="padding">
                     <div class="full col-sm-9">
@@ -78,10 +75,47 @@
                         <div class="col-sm-12" id="featured">
 							<div class="page-header text-muted">
 								<h1>Demographics</h1>	
-							</div>
-								<button type="button" class="btn btn-danger btn-lg pull-centre" style="float: right;" onclick="myFunction()">Change District</button>
-								<h5 style="float: left; color: " id="demo"></h5> <br><br>
+							</div >
+						<div class="dropdown" style="float: right;">
+								Change District
+								<select class="form-control" onchange="myFunction(this.value)">
+									<option value="N1">N1</option>
+									<option value="N2">N2</option>
+									<option value="N3">N3</option>
+									<option value="N4">N4</option>
+									<option value="N5">N5</option>
+									<option value="N6">N6</option>
+									<option value="N7">N7</option>
+									<option value="N8">N8</option>
+									<option value="E1">E1</option>
+									<option value="E2">E2</option>
+									<option value="E3">E3</option>
+									<option value="E4">E4</option>
+									<option value="E5">E5</option>
+									<option value="E6">E6</option>
+									<option value="E7">E7</option>
+									<option value="E8">E8</option>
+									<option value="E9">E9</option>
+									<option value="S1">S1</option>
+									<option value="S2">S2</option>
+									<option value="S3">S3</option>
+									<option value="S4">S4</option>
+									<option value="S5">S5</option>
+									<option value="S6">S6</option>
+									<option value="S7">S7</option>
+									<option value="S8">S8</option>
+									<option value="S9">S9</option>
+									<option value="W1">W1</option>
+									<option value="W2">W2</option>
+									<option value="W3">W3</option>
+									<option value="W4">W4</option>
+									<option value="W5">W5</option>
+									<option value="W6">W6</option>
+									<option value="W7">W7</option>
+									<option value="W8">W8</option>
+								</select>
                         </div>
+						<h5 id="demo"></h5>
 						<br><br>
 						<!--Charts-->
 						<div class="row"> 
