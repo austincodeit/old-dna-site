@@ -26,19 +26,27 @@
 	
 </head>
 <script>
-$(document).ready(function() {
+	var johnnyc;
 	
-    $("#lesen").click(function() {
-		district = prompt("Please enter the district you want to view. For example, North 5 would be N5. ", "");
+	$(document).ready(function() {
+		myFunction("N1"); // show N1 by default
+	});
+
+    function myFunction(district) {
+		
+		document.getElementById("demo").innerHTML = "You are now viewing data for Car District " + district + "."
+		
         $.ajax({
             url : "textfiles/"+district+"INTRO.txt",
             dataType: "text",
             success : function (data) {
+				johnnyc = data;
                 $(".text1").html(data);
 			
             }
 
         });
+		
 		$.ajax({
             url : "textfiles/"+district+"OTHER.txt",
             dataType: "text",
@@ -48,6 +56,7 @@ $(document).ready(function() {
             }
 
         });
+		
 		$.ajax({
             url : "textfiles/"+district+"NOTES.txt",
             dataType: "text",
@@ -58,8 +67,8 @@ $(document).ready(function() {
 
         });
 		
-    });
-}); 
+    }
+
 </script>
 
 <body>
@@ -82,7 +91,7 @@ $(document).ready(function() {
                     </li>
 					<li><a href="overlays.html">Overlays</a>
                     </li>
-					<li><a href="#stories">Write-Up</a>
+					<li><a href="#stories">Profiles</a>
                     </li>
 					<li><a href="form.html">Form</a>
                     </li>
@@ -108,7 +117,45 @@ $(document).ready(function() {
                           <div class="page-header text-muted">
                           <h1>Write-Up</h1>
                           </div> 
-						  <button type="button" class="btn btn-danger btn-lg pull-centre" style="float: right;" id="lesen">Change District</button>
+						  <div class="dropdown" style="float: right;">
+								Change District
+								<select class="form-control" onchange="myFunction(this.value)">
+									<option value="N1">N1</option>
+									<option value="N2">N2</option>
+									<option value="N3">N3</option>
+									<option value="N4">N4</option>
+									<option value="N5">N5</option>
+									<option value="N6">N6</option>
+									<option value="N7">N7</option>
+									<option value="N8">N8</option>
+									<option value="E1">E1</option>
+									<option value="E2">E2</option>
+									<option value="E3">E3</option>
+									<option value="E4">E4</option>
+									<option value="E5">E5</option>
+									<option value="E6">E6</option>
+									<option value="E7">E7</option>
+									<option value="E8">E8</option>
+									<option value="E9">E9</option>
+									<option value="S1">S1</option>
+									<option value="S2">S2</option>
+									<option value="S3">S3</option>
+									<option value="S4">S4</option>
+									<option value="S5">S5</option>
+									<option value="S6">S6</option>
+									<option value="S7">S7</option>
+									<option value="S8">S8</option>
+									<option value="S9">S9</option>
+									<option value="W1">W1</option>
+									<option value="W2">W2</option>
+									<option value="W3">W3</option>
+									<option value="W4">W4</option>
+									<option value="W5">W5</option>
+									<option value="W6">W6</option>
+									<option value="W7">W7</option>
+									<option value="W8">W8</option>
+								</select>
+                        </div>
 								<h5 style="float: left; color: " id="demo"></h5> <br><br>
                         </div>
 
@@ -126,9 +173,11 @@ $(document).ready(function() {
     </ul>
     <div class="tab-content">
         <div id="West" class="tab-pane fade in active">
-			<div class="text1">
-			<br><br>
-				Click on Change District to get started. 
+			<div>
+				<p class="text1">
+				<br><br>
+					Select a district to get started.
+				</p>
 			</div>
         </div>
         <div id="City" class="tab-pane fade">
