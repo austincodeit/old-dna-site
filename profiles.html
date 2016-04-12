@@ -6,7 +6,7 @@
 	<!--Heading Stuff-->
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Write-Up</title>
+		<title>District Profiles</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!--Bootstrap CSS-->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,47 +26,23 @@
 	
 </head>
 <script>
-	var johnnyc;
-	
-	$(document).ready(function() {
-		myFunction("N1"); // show N1 by default
-	});
+
+    $(document).ready(function() {
+        myFunction("N1"); // show N1 by default
+    });
 
     function myFunction(district) {
-		
-		document.getElementById("demo").innerHTML = "You are now viewing data for Car District " + district + "."
-		
+        
+        document.getElementById("demo").innerHTML = "ACD District " + district;
+        
         $.ajax({
             url : "textfiles/"+district+"INTRO.txt",
             dataType: "text",
             success : function (data) {
-				johnnyc = data;
                 $(".text1").html(data);
-			
             }
-
         });
-		
-		$.ajax({
-            url : "textfiles/"+district+"OTHER.txt",
-            dataType: "text",
-            success : function (data2) {
-                $(".text2").html(data2);
-			
-            }
 
-        });
-		
-		$.ajax({
-            url : "textfiles/"+district+"NOTES.txt",
-            dataType: "text",
-            success : function (data3) {
-                $(".text3").html(data3);
-			
-            }
-
-        });
-		
     }
 
 </script>
@@ -77,7 +53,7 @@
         <div class="row">
           
             <!-- sidebar -->
-            <div class="column col-sm-3" id="sidebar">
+            <div class="column col-sm-2" id="sidebar">
               
                 <ul class="nav">
 					<br><br><br><br>
@@ -88,8 +64,6 @@
                     <li><a href="demographics.html">Demographics</a>
                     </li>
                     <li><a href="maps.html">Maps</a>
-                    </li>
-					<li><a href="overlays.html">Overlays</a>
                     </li>
 					<li><a href="#stories">Profiles</a>
                     </li>
@@ -108,14 +82,14 @@
             <!-- /sidebar -->
           
             <!-- main -->
-            <div class="column col-sm-9" id="main">
+            <div class="column col-sm-10" id="main">
                 <div class="padding">
                     <div class="full col-sm-9">
                         <!-- content -->
                         
                         <div class="col-sm-12" id="featured">   
                           <div class="page-header text-muted">
-                          <h1>Write-Up</h1>
+                          <h1>PROFILES</h1>
                           </div> 
 						  <div class="dropdown" style="float: right;">
 								Change District
@@ -156,21 +130,12 @@
 									<option value="W8">W8</option>
 								</select>
                         </div>
-								<h5 style="float: left; color: " id="demo"></h5> <br><br>
+								<h2 style="float: left; color: #990000" id="demo"></h2> <br><br>
                         </div>
 
-                        
 <!--/top story-->
-                        
- 
-                        
+                  
 <div class="bs-example">
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#West" style="font-size:20px; color:#545454">Introduction</a></li>
-        <li><a data-toggle="tab" href="#City" style="font-size:20px; color:#545454">Neighborhood & Built Environment</a></li>
-		<li><a data-toggle="tab" href="#Inspector" style="font-size:20px; color:#545454" >Inspector Notes</a></li>
-
-    </ul>
     <div class="tab-content">
         <div id="West" class="tab-pane fade in active">
 			<div>
