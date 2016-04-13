@@ -101,14 +101,14 @@ function DrawCharts(district) {
 				value: parseInt(chartjsData3[0]),
 				color:"#ECD078",
 				highlight: "#FF5A5E",
-				label: "Renter Percentage"
+				label: "Owners"
 			},
 			{
 				
 				value: parseInt(chartjsData3[1]),
 				color: "#D95B43",
 				highlight: "#FF5A5E",
-				label: "Owner Percentage"
+				label: "Renters"
 			},
 	
 			]; 
